@@ -22,7 +22,7 @@ pipeline {
     }
 
   }
-  post {
+  finally {
     always {
       sh 'echo "ala"'
     }
