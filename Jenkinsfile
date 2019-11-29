@@ -32,7 +32,7 @@ pipeline {
   }
   post {
     always {
-      sh 'echo "Post action. Dziękuję i dobranoc."'
+      junit '**/target/surefire-reports/TEST-*.xml'
     }
 
   }
