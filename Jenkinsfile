@@ -18,6 +18,10 @@ pipeline {
     stage('Results') {
       steps {
         sh 'echo "Jestę resultatem"'
+        findBuildScans()
+        echo 'DingoDongoBam'
+        findBuildScans()
+        withMaven(maven: 'M3', publisherStrategy: 'IMPLICIT')
       }
     }
 
