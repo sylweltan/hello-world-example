@@ -23,7 +23,7 @@ pipeline {
 
   }
   post {
-    steps {
+    always {
       sh 'echo "ala"'
     }
   }
