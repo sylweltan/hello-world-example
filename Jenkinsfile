@@ -22,4 +22,9 @@ pipeline {
     }
 
   }
+  post {
+    steps {
+      sh 'echo "ala"'
+    }
+  }
 }
