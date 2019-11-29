@@ -26,5 +26,6 @@ pipeline {
     always {
       sh 'echo "Post action. Dziękuję i dobranoc."'
     }
+
   }
 }
