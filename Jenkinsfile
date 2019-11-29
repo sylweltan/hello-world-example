@@ -19,10 +19,11 @@ pipeline {
       steps {
         sh 'echo "Jestę resultatem"'
         echo 'DingoDongoBam'
+        junit '**/target/surefire-reports/TEST-*.xml'
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         archiveArtifacts 'target/*.jar'
       }
