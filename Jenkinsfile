@@ -17,14 +17,14 @@ pipeline {
 
     stage('Results') {
       steps {
-        sh 'echo "ala"'
+        sh 'echo "Jestę resultatem"'
       }
     }
 
   }
   post {
     always {
-      sh 'echo "ala"'
+      sh 'echo "Post action. Dziękuję i dobranoc."'
     }
   }
 }
